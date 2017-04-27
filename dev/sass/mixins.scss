@@ -1,0 +1,111 @@
+@mixin icomoon {
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin link {
+    text-decoration: none;
+    color: $black;
+    transition: 0.2s;
+
+    &:hover {
+        color: $red;
+    }
+}
+
+@mixin link-decoration ($color, $height, $transition) {
+    position: relative;
+
+    &:before {
+        z-index: 1;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        transform: scale(0);
+        transition: $transition;
+    }
+
+    &:before {
+        border-bottom: $height solid $color;
+        transform-origin: 0% 95%;
+    }
+
+    &:hover:before {
+      transform: scale(1);
+    }
+}
+
+@mixin link-decoration-inverse ($color, $height, $transition) {
+    position: relative;
+
+    &:before {
+        z-index: 1;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        transform: scale(1);
+        transition: $transition;
+    }
+
+    &:before {
+        border-bottom: $height solid $color;
+        transform-origin: 0% 95%;
+    }
+
+    &:hover:before {
+      transform: scale(0);
+    }
+}
+
+@mixin button-decoration ($color, $height, $transition) {
+    position: relative;
+    transition: $transition;
+
+    &:before, &:after {
+        transform: scale(0);
+        z-index: 1;
+        content: '';
+        position: absolute;
+        box-sizing: border-box;
+        transition: $transition;
+        top: -$height;
+        left: -$height;
+        right: -$height;
+        bottom: -$height;
+    }
+
+    &:before {
+        border-bottom: $height solid $color;
+        border-left: $height solid $color;
+        transform-origin: 0 100%;
+    }
+
+    &:after {
+        border-top: $height solid $color;
+        border-right: $height solid $color;
+        transform-origin: 100% 0%;
+    }
+
+    &:hover {
+        color: $color;
+
+        &:after, &:before {
+            transform: scale(1);
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.footer {
+    padding: 45px 0 50px 0;
+    display: flex;
+    background-color: $black;
+    color: $white;
+    justify-content: center;
+
+    &__logo {
+        padding-bottom: 35px;
+        max-width: 95px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__social-buttons {
+        padding-bottom: 15px;
+    }
+
+    &__info {
+        font-size: 13px;
+        font-family: 'GothamPro', sans-serif;
+        line-height: 1.6;
+
+        a {
+            color: white;
+            text-decoration: none;
+            @include link-decoration ($white, 1px, 0.5s);
+        }
+    }
+
+    &__center {
+        padding-left: 300px;
+    }
+
+    &__right {
+        padding-left: 300px;
+    }
+
+    &__medialine {
+        padding-top: 5px;
+        color: $gray;
+    }
+
+    a.footer__medialine-url {
+        color: $gray;
+        @include link-decoration ($gray, 1px, 0.5s);
+    }
+}

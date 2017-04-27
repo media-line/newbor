@@ -1,0 +1,71 @@
+.button {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $white;
+    display: inline-block;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    border: 2px solid $white;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.5s;
+    outline: none;
+
+    &_slide {
+        font-size: 18px;
+    }
+
+    //@include button-decoration ($green, 2px, 0.5s);
+
+    &:hover {
+        background-color: $green;
+        border: 2px solid $green;
+    }
+
+    &_news {
+        font-size: 13px;
+        padding: 7px 25px;
+    }
+
+    &_black {
+        border: 2px solid $white;
+        color: $white;
+        //@include button-decoration ($black, 2px, 0.5s);
+
+        &:hover {
+            background-color: $black;
+            border: 2px solid $black;
+        }
+    }
+
+    &_white {
+        border: 2px solid $black;
+        color: $black;
+        //@include button-decoration ($white, 2px, 0.5s);
+
+        &:hover {
+            background-color: $black;
+            border: 2px solid $black;
+            color: $white;
+        }
+    }
+
+    &_form {
+        padding: 7px 70px;
+    }
+
+    &_black-green {
+        border: 2px solid $black;
+        color: $black;
+        //include button-decoration ($green, 2px, 0.5s);
+
+        &:hover {
+            background-color: $green;
+            border: 2px solid $green;
+            color: $white;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.top-menu {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Roboto', sans-serif;
+
+    &__element {
+        padding: 0 12px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &__link {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 15.5px;
+        font-weight: 500;
+        padding: 14px 0;
+        display: inline-block;
+        position: relative;
+
+        &_active {
+            &:before {
+                transform: scale(1);
+            }
+        }
+
+        @include link-decoration ($green, 4px, 0.5s);
+    }
+}

@@ -1,0 +1,104 @@
+.slider {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2;
+
+    &__slide {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        text-align: center;
+        padding: 20px 0;
+        box-sizing: border-box;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__info {
+        background-color: rgba($black, 0.7);
+        display: inline-block;
+        color: $white;
+        padding: 30px 80px;
+    }
+
+    &__info-name {
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding-bottom: 40px;
+    }
+
+    &__info-text {
+        font-weight: 300;
+        font-size: 29px;
+        padding-bottom: 25px;
+    }
+
+    &__arrow {
+        position: absolute;
+        top: 50%;
+        margin-top: -15px;
+        z-index: 1;
+        cursor: pointer;
+        height: 30px;
+        width: 30px;
+        background-color: transparent;
+        display: inline-block;
+        border-left: 2px solid $white;
+        border-bottom: 2px solid $white;
+        border-right: 2px solid transparent;
+        border-top: 2px solid transparent;
+        transform: rotate(45deg);
+        transition: 0.5s;
+        outline: none;
+
+        &_prev {
+            left: 35px;
+        }
+
+        &_next {
+            right: 35px;
+        }
+
+        /*&:before {
+            transform: scale(0);
+            z-index: 1;
+            content: '';
+            position: absolute;
+            box-sizing: border-box;
+            transition: 0.5s;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+        }
+
+        &:before {
+            border-bottom: 2px solid $green;
+            border-left: 2px solid $green;
+            transform-origin: 0 100%;
+        }*/
+
+        &:hover {
+            /*&:before {
+                transform: scale(1);
+            }*/
+
+            border-left: 2px solid $green;
+            border-bottom: 2px solid $green;
+        }
+
+        &_next {
+            transform: rotate(-135deg);
+        }
+    }
+
+    &__slide-img {
+        opacity: 0;
+        height: 0;
+    }
+}

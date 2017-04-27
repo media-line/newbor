@@ -1,0 +1,62 @@
+.link-description {
+    position: relative;
+    display: inline-block;
+    z-index: 3;
+    line-height: 1;
+    font-weight: 700;
+    color: $gray-dark;
+    border-bottom: 2px solid $gray-dark;
+
+    &:hover {
+        .link-description__block {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &__block {
+        position: absolute;
+        display: block;
+        bottom: 100%;
+        left: -50%;
+        width: 240px;
+        box-shadow: 1px 1px 5px rgba($black, 0.8);
+        transition: 0.5s;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    &__img {
+        display: block;
+        height: 225px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__info {
+        background-color: $white;
+        padding: 15px;
+        box-sizing: border-box;
+        display: block;
+        font-weight: 400;
+    }
+
+    &__text {
+        padding-bottom: 10px;
+        display: block;
+        font-size: 15px;
+    }
+
+    &__readmore {
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $black;
+        padding-bottom: 3px;
+
+        @include link-decoration ($black, 2px, 0.5s);
+    }
+}

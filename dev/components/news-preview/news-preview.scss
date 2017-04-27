@@ -1,0 +1,99 @@
+.news-preview {
+    display: flex;
+    color: $white;
+    justify-content: space-between;
+
+    &__preview-block {
+        position: relative;
+        height: 360px;
+        display: block;
+        width: 32.5%;
+        min-width: 32.5%;
+    }
+
+    &__wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($black, 0.3);
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    &__seo-img {
+        height: 0;
+        opacity: 0;
+    }
+
+    &__text {
+        font-family: 'PT Sans', sans-serif;
+        font-size: 16px;
+        line-height: 1.2;
+        position: absolute;
+        bottom: 80px;
+        left: 15px;
+        right: 15px;
+    }
+
+    &__date {
+        font-size: 12px;
+        font-family: 'circle-bold';
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        right: 15px;
+    }
+
+    &__preview {
+        box-shadow: 2px 2px 10px $white-dark;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        &_small {
+            height: 172.5px;
+            position: relative;
+            text-shadow: 0 0 6px $black;
+            padding: 15px;
+            box-sizing: border-box;
+
+            & + .news-preview__preview_small {
+                margin-top: 15px;
+            }
+        }
+
+        &_black {
+            color: $black;
+            text-shadow: none;
+        }
+    }
+
+    &__title {
+        font-size: 26px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding-bottom: 25px;
+    }
+
+    &__name {
+        line-height: 1.2;
+    }
+}

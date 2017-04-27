@@ -1,0 +1,21 @@
+.bottom-menu {
+    font-family: 'GothamPro', sans-serif;
+
+    &__element {
+        padding-bottom: 2px;
+    }
+
+    &__link {
+        color: $white;
+        text-decoration: none;
+        font-size: 13px;
+        @include link-decoration ($white, 1px, 0.5s);
+    }
+
+    &_big {
+        .bottom-menu__link {
+            font-size: 15px;
+            @include link-decoration-inverse ($gray, 1px, 0.5s);
+        }
+    }
+}

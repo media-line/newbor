@@ -1,0 +1,32 @@
+@import './reset';
+
+@font-face {
+    font-family: 'circle-bold';
+    src: //url('webfont.woff2') format('woff2'),
+        url('./../fonts/Circe-Bold.ttf')  format('truetype'),
+        url('./../fonts/Circe-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamPro';
+    src: //url('webfont.woff2') format('woff2'),
+        url('./../fonts/GothamPro.ttf')  format('truetype'),
+        url('./../fonts/GothamPro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+b {
+    font-weight: 400;
+}
+
+::selection {
+    background-color: $green;
+    color: $white;
+}

@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+
+    <meta name="viewport" content="width=1320">
+
+    <script src="/js/topMenu.js"></script>
+    <script src="/js/slideMenu.js"></script>
+    <script src="/js/bottomMenu.js"></script>
+    <script src="/js/socialButtons.js"></script>
+    <script src="/js/newsPage.js"></script>
+    <script src="/js/newsList.js"></script>
+    <script src="/js/timer.js"></script>
+    <script src="/js/breadcrumbs.js"></script>
+    <script src="/js/pagination.js"></script>
+
+
+    <script src="/js/common.js"></script>
+    <script src="/js/inner.js"></script>
+
+    <!--[if lte IE 9]><script src="<a href="http://phpbbex.com/oldies/oldies.js">http://phpbbex.com/oldies/oldies.js</a>" charset="utf-8"></script><![endif]-->
+</head>
+<body>
+    <div class="header__fix"></div>
+
+    <header class="header">
+        <div class="header__logo">
+            <a href="/"><img src="./images/logo.png" alt=""></a>
+        </div>
+
+        <div class="header__info">
+            <div class="header__top">
+                <div class="header__phone">
+                    <a href="tel:+375293000000">+375 29 300 00 00</a>
+                </div>
+
+                <button data-modal-button="order-online" class="header__order-button modal__order-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.23 22.23"><g id="Layer_3" data-name="Layer 3"><path class="icon-phone-elem" d="M17.83,22.23A17.75,17.75,0,0,1,5.55,16.75,17.67,17.67,0,0,1,0,4.08V3.91l.1-.13A12,12,0,0,1,1,2.73,11.69,11.69,0,0,1,5.11.08,1.3,1.3,0,0,1,5.58,0C6.11,0,7,.28,7.17.79,7.71,2.3,8.4,4.26,8.89,6.14a2,2,0,0,1-.52,1.73L6.6,9a.45.45,0,0,0-.19.31,1.38,1.38,0,0,0,.29,1,25.64,25.64,0,0,0,2.41,2.82,25.07,25.07,0,0,0,2.81,2.39c.48.35,1.14.39,1.32.11l1.13-1.78c.29-.45,1.13-.55,1.43-.55a1.3,1.3,0,0,1,.28,0,24.7,24.7,0,0,1,5.4,1.74,1.94,1.94,0,0,1,.68,2,11.71,11.71,0,0,1-2.64,4.06,12,12,0,0,1-1.06.93l-.13.1ZM1,4.27A16.64,16.64,0,0,0,6.19,16l.07.07a16.74,16.74,0,0,0,11.57,5.18H18a11,11,0,0,0,.84-.75,10.7,10.7,0,0,0,2.42-3.72A1.25,1.25,0,0,0,21,16a24.26,24.26,0,0,0-5.14-1.64,1.42,1.42,0,0,0-.7.14l-1.08,1.72a2,2,0,0,1-2.75.17A26.09,26.09,0,0,1,8.4,13.84,26.55,26.55,0,0,1,5.9,10.9a2.33,2.33,0,0,1-.46-1.8,1.43,1.43,0,0,1,.64-1L7.83,7a2,2,0,0,0,.09-.64C7.44,4.56,6.76,2.62,6.23,1.14c0,0-.38-.14-.65-.14H5.47A10.58,10.58,0,0,0,1,4.27Z"/><path class="icon-phone-arrow-right" d="M17.73,11.91a.5.5,0,0,1-.34-.87L19.63,9,17.39,6.87a.5.5,0,1,1,.68-.73L20.7,8.6a.5.5,0,0,1,0,.73l-2.63,2.45a.5.5,0,0,1-.34.13Z"/><path class="icon-phone-right" d="M19.73,9.46H11.9a.5.5,0,1,1,0-1h7.84a.5.5,0,1,1,0,1Z"/><path class="icon-phone-arrow-left" d="M14.53,6.16A.5.5,0,0,1,14.19,6L11.56,3.58a.5.5,0,0,1,0-.73L14.19.39a.5.5,0,1,1,.68.73L12.63,3.21,14.87,5.3a.5.5,0,0,1-.34.87Z"/><path class="icon-phone-left" d="M20.36,3.71H12.52a.5.5,0,1,1,0-1h7.84a.5.5,0,1,1,0,1Z"/></g></svg> оставить заявку
+                </button>
+            </div>
+
+            <div class="header__menu">
+                <button class="slide-menu__menu-button-block slide-menu__menu-button-block_main">
+                    <div class="slide-menu__menu-button">
+                        <span class="slide-menu__line"></span>
+                        <span class="slide-menu__line"></span>
+                        <span class="slide-menu__line"></span>
+                    </div>
+
+                    Меню
+                </button>
+
+                <div class="top-menu">
+                    <div class="top-menu__element">
+                        <a href="/" class="top-menu__link">О проекте</a>
+                    </div>
+
+                    <div class="top-menu__element">
+                        <a href="/" class="top-menu__link">Выбор квартир</a>
+                    </div>
+
+                    <div class="top-menu__element">
+                        <a href="/" class="top-menu__link">Условия покупки</a>
+                    </div>
+
+                    <div class="top-menu__element">
+                        <a href="/" class="top-menu__link">Новые форматы квартир</a>
+                    </div>
+
+                    <div class="top-menu__element">
+                        <a href="/" class="top-menu__link">Контакты</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-menu__slide">
+            <div class="slide-menu__slide-container">
+                <button class="slide-menu__menu-button-block slide-menu__menu-button-block_copy">
+                    <div class="slide-menu__menu-button">
+                        <span class="slide-menu__line"></span>
+                        <span class="slide-menu__line"></span>
+                        <span class="slide-menu__line"></span>
+                    </div>
+
+                    Меню
+                </button>
+
+                <div class="slide-menu__slide-wrapper">
+                    <div class="slide-menu__left">
+                        <div class="slide-menu__menu">
+                            <div class="slide-menu__menu-name"><a href="/" class="slide-menu__name-link">О проекте</a></div>
+
+                            <div class="slide-menu__element">
+                                <a href="/" class="slide-menu__link">
+                                    Инфраструктура
+                                </a>
+                            </div>
+
+                            <div class="slide-menu__element">
+                                <a href="/" class="slide-menu__link">
+                                    Архитекторы
+                                </a>
+                            </div>
+
+                            <div class="slide-menu__element">
+                                <a href="/" class="slide-menu__link">
+                                    Награды
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="slide-menu__menu">
+                            <div href="/" class="slide-menu__menu-name"><a href="/" class="slide-menu__name-link">Выбор квартир</a></div>
+
+                            <div class="slide-menu__element">
+                                <a href="/" class="slide-menu__link">
+                                    Подбор по генплану
+                                </a>
+                            </div>
+
+                            <div class="slide-menu__element">
+                                <a href="/" class="slide-menu__link">
+                                    Подбор по параметрам
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="slide-menu__menu">
+                            <div class="slide-menu__menu-name"><a href="/" class="slide-menu__name-link">Условия покупки</a></div>
+
+                            <div class="slide-menu__element">
+                                <a href="/" class="slide-menu__link">
+                                    Цены
+                                </a>
+                            </div>
+
+                            <div class="slide-menu__element">
+                                <a href="/" class="slide-menu__link">
+                                    Рассрочка
+                                </a>
+                            </div>
+
+                            <div class="slide-menu__element">
+                                <a href="/" class="slide-menu__link">
+                                    Кредит
+                                </a>
+                            </div>
+
+                            <div class="slide-menu__element">
+                                <a href="/" class="slide-menu__link">
+                                    Лизинг
+                                </a>
+                            </div>
+
+                            <div class="slide-menu__element">
+                                <a href="/" class="slide-menu__link">
+                                    Trade-in
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="slide-menu__menu">
+                            <div class="slide-menu__menu-name"><a href="/" class="slide-menu__name-link">Новости</a></div>
+
+                            <div class="slide-menu__element">
+                                <a href="/" class="slide-menu__link">
+                                    Новости и акции
+                                </a>
+                            </div>
+
+                            <div class="slide-menu__element">
+                                <a href="/" class="slide-menu__link">
+                                    Ход строительства
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="slide-menu__menu">
+                            <div class="slide-menu__menu-name"><a href="/" class="slide-menu__name-link">Новые форматы квартир</a></div>
+
+                            <div class="slide-menu__element">
+                                <a href="/" class="slide-menu__link">
+                                    Квартиры с ремонтом
+                                </a>
+                            </div>
+
+                            <div class="slide-menu__element">
+                                <a href="/" class="slide-menu__link">
+                                    Квартиры с мебелью
+                                </a>
+                            </div>
+
+                            <div class="slide-menu__element">
+                                <a href="/" class="slide-menu__link">
+                                    Рафинады
+                                </a>
+                            </div>
+
+                            <div class="slide-menu__element">
+                                <a href="/" class="slide-menu__link">
+                                    Террасы
+                                </a>
+                            </div>
+
+                            <div class="slide-menu__element">
+                                <a href="/" class="slide-menu__link">
+                                    Эксплуатируемая кровля
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="slide-menu__menu">
+                            <div class="slide-menu__menu-name"><a href="/" class="slide-menu__name-link">Программа лояльности</a></div>
+                        </div>
+
+                        <div class="slide-menu__menu">
+                            <div class="slide-menu__menu-name"><a href="/" class="slide-menu__name-link">Контакты</a></div>
+                        </div>
+                    </div>
+
+                    <div class="slide-menu__right">
+                        <div class="timer">
+                            <div class="timer__name">
+                                Бесплатная отделка<br> квартир
+                            </div>
+
+                            <div class="timer__clock">
+                                <div class="timer__block">
+                                    <div class="timer__number timer__number_days">0</div>
+                                    <div class="timer__text timer__text_days">дней</div>
+                                </div>
+
+                                <div class="timer__block">
+                                    <div class="timer__number timer__number_hours">0</div>
+                                    <div class="timer__text timer__text_hours">часов</div>
+                                </div>
+
+                                <div class="timer__block">
+                                    <div class="timer__number timer__number_minutes">0</div>
+                                    <div class="timer__text timer__text_minutes">минут</div>
+                                </div>
+                            </div>
+
+                            <a href="/" class="button">Узнать подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="inner-header" style='background-image: url(./images/news-header.jpg);'>
+        <img class="inner-header__img-hidden" src="./images/news-header.jpg" alt="" title="">
+
+        <div class="inner-header__wrapper">
+            <div class="inner-header__breadcrumbs">
+                <div class="breadcrumbs">
+                    <a href="/" class="breadcrumbs__link">
+                        Главная
+                    </a>
+
+                    <span class="breadcrumbs__element">
+                        Новости
+                    </span>
+
+                    <span class="breadcrumbs__last">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.97 60.71"><title>Ресурс 1</title><g id="Слой_2" data-name="Слой 2"><g id="Layer_3" data-name="Layer 3"><polyline class="arrow-svg" points="33.72 1.06 2.21 32.56 34.22 59.56"/><line class="arrow-svg" x1="2.97" y1="32.56" x2="84.97" y2="32.56"/></g></g></svg>
+                    </span>
+                </div>
+            </div>
+
+            <div class="inner-header__title">
+                Новости и акции
+            </div>
+        </div>
+    </div>
+
+    <div class="inner-page">
+        <div class="news-list">
+            <div class="news-item">
+                <div class="news-item__img" style="background-image: url('./images/news-list1.jpg');">
+                    <img class="news-item__img-hidden" src="./images/news-list1.jpg" alt="" title="">
+                </div>
+
+                <div class="news-item__info">
+                    <div class="news-item__date">
+                        28/03/2017
+                    </div>
+
+                    <a href="/" class="news-item__title">
+                        Квартиры с террасами - то, о чем вы мечтали!
+                    </a>
+
+                    <div class="news-item__text">
+                        Первый панельный дом с террасами в «Новой Боровой» был презентован летом прошлого года. Жильцы верхних этажей получили располагающие к отдыху огороженные площадки на кровле с деревянными скамейками и цветниками, а обитателям первых этажей достались небольшие ...
+                    </div>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-item__img" style="background-image: url('./images/news-list2.jpg');">
+                    <img class="news-item__img-hidden" src="./images/news-list2.jpg" alt="" title="">
+                </div>
+
+                <div class="news-item__info">
+                    <div class="news-item__date">
+                        28/03/2017
+                    </div>
+
+                    <a href="/" class="news-item__title">
+                        Профессионалы помогают нашим покупателям с дизайном квартиры
+                    </a>
+
+                    <div class="news-item__text">
+                        Уважаемые покупатели, специально для вас в нашем офисе продаж организована работа профессионального дизайнера интерьеров. Удобно расставить мебель и подобрать интересные решения для вашего дома вы можете абсолютно ...
+                    </div>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-item__info">
+                    <div class="news-item__date">
+                        28/03/2017
+                    </div>
+
+                    <a href="/" class="news-item__title">
+                        Профессионалы помогают нашим покупателям с дизайном квартиры
+                    </a>
+
+                    <div class="news-item__text">
+                        Уважаемые покупатели, специально для вас в нашем офисе продаж организована работа профессионального дизайнера интерьеров. Удобно расставить мебель и подобрать интересные решения для вашего дома вы можете абсолютно ...
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <a href="/" class="pagination__element pagination__element_link">1</a>
+
+            <a href="/" class="pagination__element pagination__element_link">2</a>
+
+            <span class="pagination__element pagination__element_active">3</span>
+
+            <span class="pagination__element pagination__element_dots">...</span>
+
+            <a href="/" class="pagination__element pagination__element_link">14</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__left">
+            <div class="footer__logo">
+                <a href="/"><img src="./images/logo.png" alt=""></a>
+            </div>
+
+            <div class="bottom-menu bottom-menu_big">
+                <div class="bottom-menu__element">
+                    <a href="/" class="bottom-menu__link">Карта сайта</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__center">
+            <div class="bottom-menu">
+                <div class="bottom-menu__element">
+                    <a href="/" class="bottom-menu__link">О проекте</a>
+                </div>
+
+                <div class="bottom-menu__element">
+                    <a href="/" class="bottom-menu__link">Выбор квартир</a>
+                </div>
+
+                <div class="bottom-menu__element">
+                    <a href="/" class="bottom-menu__link">Условия покупки</a>
+                </div>
+
+                <div class="bottom-menu__element">
+                    <a href="/" class="bottom-menu__link">Новости</a>
+                </div>
+
+                <div class="bottom-menu__element">
+                    <a href="/" class="bottom-menu__link">Новые форматы квартир</a>
+                </div>
+
+                <div class="bottom-menu__element">
+                    <a href="/" class="bottom-menu__link">Программа лояльности</a>
+                </div>
+
+                <div class="bottom-menu__element">
+                    <a href="/" class="bottom-menu__link">Контакты</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__right">
+            <div class="footer__social-buttons">
+                <div class="social-buttons">
+                    <div class="social-buttons__button">
+                        <a href="/" class="social-buttons__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.44 12.44"><g id="Layer_1" data-name="Layer 1"><path class="facebook-back" d="M10.07,12.42l-7.65,0A2.39,2.39,0,0,1,0,10.07L0,2.42A2.39,2.39,0,0,1,2.38,0L10,0a2.39,2.39,0,0,1,2.39,2.38l0,7.65A2.39,2.39,0,0,1,10.07,12.42Z"/><path class="facebook-logo" d="M9.13,12.42H7l0-5.25H5.86V5.38H6.94V4.29A2,2,0,0,1,9.28,1.93h1.45V3.73H9.83c-.68,0-.72.25-.72.72v.91h1.64l-.19,1.81H9.12l0,5.25Z"/></g></svg>
+                        </a>
+                    </div>
+
+                    <div class="social-buttons__button">
+                        <a href="/" class="social-buttons__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.44 12.45"><g id="Layer_1" data-name="Layer 1"><path class="vk-back" d="M10.07,12.42l-7.65,0A2.39,2.39,0,0,1,0,10.07L0,2.42A2.38,2.38,0,0,1,2.38,0L10,0a2.38,2.38,0,0,1,2.39,2.38l0,7.65A2.38,2.38,0,0,1,10.07,12.42Z"/><path class="vk-logo" d="M11.15,8.65l0-.06a5.13,5.13,0,0,0-1-1.15h0c-.22-.21-.37-.35-.42-.43a.41.41,0,0,1-.08-.42,3.94,3.94,0,0,1,.47-.68l.34-.44q.9-1.2.78-1.54l0-.05A.3.3,0,0,0,11,3.77a.82.82,0,0,0-.33,0l-1.5,0a.17.17,0,0,0-.1,0H9l0,0-.06.05A.38.38,0,0,0,8.82,4a8.64,8.64,0,0,1-.55,1.17c-.13.22-.25.4-.35.56a2.47,2.47,0,0,1-.27.35l-.2.18c-.06,0-.1.06-.13.06l-.09,0a.32.32,0,0,1-.12-.13A.53.53,0,0,1,7,5.94c0-.08,0-.15,0-.21s0-.14,0-.25,0-.18,0-.22S7,5,7,4.83s0-.28,0-.37,0-.18,0-.29a1.14,1.14,0,0,0,0-.24A.74.74,0,0,0,7,3.77a.28.28,0,0,0-.11-.12L6.7,3.58A3.64,3.64,0,0,0,6,3.51a3.47,3.47,0,0,0-1.25.13.69.69,0,0,0-.2.16c-.06.08-.07.12,0,.13A.64.64,0,0,1,5,4.15l0,.06a1,1,0,0,1,.07.24,2.5,2.5,0,0,1,0,.38,4.14,4.14,0,0,1,0,.65c0,.18,0,.32,0,.42A.92.92,0,0,1,5,6.15l-.06.12,0,0-.14,0a.34.34,0,0,1-.18-.07A1.18,1.18,0,0,1,4.38,6a2.87,2.87,0,0,1-.25-.36,6.14,6.14,0,0,1-.29-.54L3.75,5l-.22-.43c-.09-.19-.17-.37-.24-.54a.36.36,0,0,0-.13-.17h0l-.08,0-.12,0H1.51a.36.36,0,0,0-.3.1l0,0a.19.19,0,0,0,0,.08.43.43,0,0,0,0,.14c.21.49.44,1,.68,1.41s.46.82.64,1.1.37.54.55.79l.37.47.14.16.13.12a3.27,3.27,0,0,0,.37.3,6.35,6.35,0,0,0,.54.34,2.82,2.82,0,0,0,.69.27,2.35,2.35,0,0,0,.76.08h.6A.4.4,0,0,0,7,9.08L7,9A.34.34,0,0,0,7,9a.48.48,0,0,0,0-.14,1.68,1.68,0,0,1,0-.41,1,1,0,0,1,.09-.27A.61.61,0,0,1,7.28,8l.09-.07,0,0A.33.33,0,0,1,7.71,8a1.77,1.77,0,0,1,.32.3l.36.4A2.48,2.48,0,0,0,8.75,9l.11.06a1.42,1.42,0,0,0,.27.11.63.63,0,0,0,.29,0l1.33,0a.6.6,0,0,0,.31-.07A.25.25,0,0,0,11.19,9a.37.37,0,0,0,0-.18A.61.61,0,0,0,11.15,8.65Z"/></g></svg>
+                        </a>
+                    </div>
+
+                    <div class="social-buttons__button">
+                        <a href="/" class="social-buttons__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.44 12.44"><g id="Layer_1" data-name="Layer 1"><path class="instagram-back" d="M10.07,12.42l-7.65,0A2.39,2.39,0,0,1,0,10.07L0,2.42A2.38,2.38,0,0,1,2.38,0L10,0a2.38,2.38,0,0,1,2.39,2.38l0,7.65A2.39,2.39,0,0,1,10.07,12.42Z"/><path class="instagram-logo" d="M3,1.94l6.38,0A1.11,1.11,0,0,1,10.51,3l0,6.39a1.1,1.1,0,0,1-1.1,1.11L3,10.53a1.11,1.11,0,0,1-1.11-1.1L1.91,3A1.1,1.1,0,0,1,3,1.94Zm5.16.94h0a.38.38,0,0,0-.38.39v.93a.39.39,0,0,0,.39.38h1a.39.39,0,0,0,.39-.39V3.26a.39.39,0,0,0-.39-.38ZM9.54,5.55H8.79a2.56,2.56,0,0,1,.11.74A2.63,2.63,0,0,1,6.24,8.88,2.63,2.63,0,0,1,3.56,6.31a2.4,2.4,0,0,1,.11-.74H2.88V9.2a.34.34,0,0,0,.34.34l6,0a.34.34,0,0,0,.34-.34V5.55Zm-3.32-1h0A1.67,1.67,0,1,0,8,6.2,1.7,1.7,0,0,0,6.22,4.53Z"/></g></svg>
+                        </a>
+                    </div>
+
+                    <div class="social-buttons__button">
+                        <a href="/" class="social-buttons__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.44 12.45"><g id="Layer_1" data-name="Layer 1"><path class="youtube-back" d="M10.07,12.42l-7.65,0A2.39,2.39,0,0,1,0,10.07L0,2.42A2.38,2.38,0,0,1,2.38,0L10,0a2.38,2.38,0,0,1,2.39,2.38l0,7.65A2.38,2.38,0,0,1,10.07,12.42Z"/><polyline class="youtube-logo" points="4.86 3.27 9.19 6.34 4.86 9.41"/></g></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__info">
+                <p><a href="tel:+372293000000">+372 29 300 00 00</a></p>
+                <p>ул. Леонардо да Винчи, 2, д. Копище, Минский район</p>
+                <p><a href="mailto:sales@a-100.by">sales@a-100.by</a></p>
+
+                <div class="footer__medialine">Разработка сайта - <a class="footer__medialine-url" href="http://www.medialine.by/">Медиа Лайн</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" data-modal="order-online">
+        <div class="modal__wrapper">
+            <div class="modal__block">
+                <div class="modal__body">
+                    <div class="modal__close">
+                        <svg width="64" version="1.1" xmlns="http://www.w3.org/2000/svg" height="64" viewBox="0 0 64 64" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 64 64">
+                          <g>
+                            <path class="cross" d="M28.941,31.786L0.613,60.114c-0.787,0.787-0.787,2.062,0,2.849c0.393,0.394,0.909,0.59,1.424,0.59   c0.516,0,1.031-0.196,1.424-0.59l28.541-28.541l28.541,28.541c0.394,0.394,0.909,0.59,1.424,0.59c0.515,0,1.031-0.196,1.424-0.59   c0.787-0.787,0.787-2.062,0-2.849L35.064,31.786L63.41,3.438c0.787-0.787,0.787-2.062,0-2.849c-0.787-0.786-2.062-0.786-2.848,0   L32.003,29.15L3.441,0.59c-0.787-0.786-2.061-0.786-2.848,0c-0.787,0.787-0.787,2.062,0,2.849L28.941,31.786z"/>
+                          </g>
+                        </svg>
+                    </div>
+
+                    <div class="order-form">
+                        <div class="order-form__name">
+                            Отправить заявку
+                        </div>
+
+                        <div class="order-form__text">
+                            Отправьте заявку, и наш менеджер с вами свяжется  в ближайшее рабочее время
+                        </div>
+
+                        <div class="order-form__block">
+                            <div class="order-form__title">
+                                Имя:
+                            </div>
+
+                            <div class="order-form__field">
+                                <input type="text" class="text-field">
+                            </div>
+                        </div>
+
+                        <div class="order-form__block">
+                            <div class="order-form__title">
+                                Номер телефона:
+                            </div>
+
+                            <div class="order-form__field">
+                                <input type="text" class="text-field">
+                            </div>
+                        </div>
+
+                        <div class="order-form__block">
+                            <div class="order-form__title">
+                                Электронная почта:
+                            </div>
+
+                            <div class="order-form__field">
+                                <input type="text" class="text-field">
+                            </div>
+                        </div>
+
+                        <div class="order-form__block">
+                            <div class="order-form__title">
+                                Сообщение:
+                            </div>
+
+                            <div class="order-form__field">
+                                <textarea class="textarea"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="order-form__button">
+                            <button class="button button_form button_black-green">Отправить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" data-modal="order-online-send">
+        <div class="modal__wrapper">
+            <div class="modal__background"></div>
+
+            <div class="modal__block">
+                <div class="modal__body">
+                    <div class="modal__close">
+                        <svg width="64" version="1.1" xmlns="http://www.w3.org/2000/svg" height="64" viewBox="0 0 64 64" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 64 64">
+                          <g>
+                            <path class="cross" d="M28.941,31.786L0.613,60.114c-0.787,0.787-0.787,2.062,0,2.849c0.393,0.394,0.909,0.59,1.424,0.59   c0.516,0,1.031-0.196,1.424-0.59l28.541-28.541l28.541,28.541c0.394,0.394,0.909,0.59,1.424,0.59c0.515,0,1.031-0.196,1.424-0.59   c0.787-0.787,0.787-2.062,0-2.849L35.064,31.786L63.41,3.438c0.787-0.787,0.787-2.062,0-2.849c-0.787-0.786-2.062-0.786-2.848,0   L32.003,29.15L3.441,0.59c-0.787-0.786-2.061-0.786-2.848,0c-0.787,0.787-0.787,2.062,0,2.849L28.941,31.786z"/>
+                          </g>
+                        </svg>
+                    </div>
+
+                    <div class="order-form">
+                        <div class="order-form__send-title">
+                            Ваша заявка отправлена
+                        </div>
+
+                        <div class="order-form__send-text">
+                            В ближайшее время наши менеджеры свяжутся с Вами.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
