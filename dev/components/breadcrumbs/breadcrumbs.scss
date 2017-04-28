@@ -8,6 +8,7 @@
     position: relative;
     padding: 5px 30px 3px 10px;
     display: inline-block;
+    line-height: 1;
 
     &__link {
         font-family: "Roboto", sans-serif;
@@ -31,7 +32,7 @@
             transform: rotate(45deg);
             position: absolute;
             right: -14px;
-            top: 3px;
+            top: 2px;
             display: flex;
             align-items: center;
         }
@@ -52,7 +53,7 @@
         top: 0;
         bottom: 0;
         text-align: center;
-        padding-top: 4px;
+        padding-top: 3px;
 
         svg {
             height: 15px;

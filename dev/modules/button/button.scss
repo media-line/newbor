@@ -68,4 +68,9 @@
             color: $white;
         }
     }
+
+    &_error {
+        font-size: 15px;
+        padding: 5px 35px;
+    }
 }

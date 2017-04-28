@@ -11,23 +11,34 @@ module.exports = {
         slideMenu: __dirname + '/dev/components/slide-menu/slide-menu',
         bottomMenu: __dirname + '/dev/components/bottom-menu/bottom-menu',
         socialButtons: __dirname + '/dev/components/social-buttons/social-buttons',
+        timer: __dirname + '/dev/components/timer/timer',
+        breadcrumbs: __dirname + '/dev/components/breadcrumbs/breadcrumbs',
+        pagination: __dirname + '/dev/components/pagination/pagination',
         slider: __dirname + '/dev/components/slider/slider',
         sliderPreview: __dirname + '/dev/components/slider-preview/slider-preview',
         optionsPreview: __dirname + '/dev/components/options-preview/options-preview',
         newsPreview: __dirname + '/dev/components/news-preview/news-preview',
-        timer: __dirname + '/dev/components/timer/timer',
-        newsList: __dirname + '/dev/components/news-list/news-list',
-        breadcrumbs: __dirname + '/dev/components/breadcrumbs/breadcrumbs',
-        pagination: __dirname + '/dev/components/pagination/pagination',
         newsDetail: __dirname + '/dev/components/news-detail/news-detail',
+        newsList: __dirname + '/dev/components/news-list/news-list',
+        loyaltyCompaniesList: __dirname + '/dev/components/loyalty-companies-list/loyalty-companies-list',
+        loyaltyCompanyDetail: __dirname + '/dev/components/loyalty-company-detail/loyalty-company-detail',
+        loyaltyCategoriesList: __dirname + '/dev/components/loyalty-categories-list/loyalty-categories-list',
+        contacts: __dirname + '/dev/components/contacts/contacts',
         
+        error404: __dirname + '/dev/modules/error-404/error-404',
         common: __dirname + '/dev/modules/common/common',
         mainpage: __dirname + '/dev/modules/mainpage/mainpage',
         inner: __dirname + '/dev/modules/inner/inner',
     
-        mainpage: __dirname + '/dev/mainpage',
+        mainpagePage: __dirname + '/dev/mainpage',
         newsPage: __dirname + '/dev/news-page',
         newsDetailPage: __dirname + '/dev/news-detail-page',
+        loyaltyCompaniesPage: __dirname + '/dev/loyalty-companies-page',
+        loyaltyCompanyPage: __dirname + '/dev/loyalty-company-page',
+        loyaltyCategoriesPage: __dirname + '/dev/loyalty-categories-page',
+        errorPage: __dirname + '/dev/error-page',
+        aboutPage: __dirname + '/dev/about-page',
+        contactsPage: __dirname + '/dev/contacts-page',
     }, 
     output: {
         path: __dirname + '/public',
@@ -98,7 +109,7 @@ module.exports = {
     plugins: [
         new webpack.NoEmitOnErrorsPlugin(),
         /*new webpack.optimize.CommonsChunkPlugin({
-            name: 'common',
+            name: 'test',
             minChunks: 2,
         }),*/
         /*new webpack.optimize.UglifyJsPlugin({

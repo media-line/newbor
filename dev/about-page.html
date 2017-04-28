@@ -7,21 +7,20 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 
-    <meta name="viewport" content="width=1260">
+    <meta name="viewport" content="width=1320">
 
-    <script src="/js/mainpage.js"></script>
     <script src="/js/topMenu.js"></script>
     <script src="/js/slideMenu.js"></script>
     <script src="/js/bottomMenu.js"></script>
     <script src="/js/socialButtons.js"></script>
-    <script src="/js/slider.js"></script>
-    <script src="/js/sliderPreview.js"></script>
-    <script src="/js/optionsPreview.js"></script>
-    <script src="/js/newsPreview.js"></script>
     <script src="/js/timer.js"></script>
+    <script src="/js/breadcrumbs.js"></script>
+    <script src="/js/aboutPage.js"></script>
+
+
     <script src="/js/common.js"></script>
-    <script src="/js/mainpage.js"></script>
-    <script src="/js/mainpagePage.js"></script>
+    <script src="/js/inner.js"></script>
+
 
     <!--[if lte IE 9]><script src="<a href="http://phpbbex.com/oldies/oldies.js">http://phpbbex.com/oldies/oldies.js</a>" charset="utf-8"></script><![endif]-->
 </head>
@@ -255,364 +254,59 @@
         </div>
     </header>
 
-    <section class="slider">
-        <div class="slider__slide" style="background-image: url('./images/slide.jpg');">
-            <img class="slider__slide-img" src="./images/slide.jpg" alt="">
+    <div class="inner-header" style='background-image: url(./images/about-header.jpg);'>
+        <img class="inner-header__img-hidden" src="./images/about-header.jpg" alt="" title="">
 
-            <div class="slider__wrapper">
-                <div class="slider__info">
-                    <div class="slider__info-name">
-                        Всем по квартире<br> в новой боровой:
-                    </div>
+        <div class="inner-header__wrapper">
+            <div class="inner-header__breadcrumbs">
+                <div class="breadcrumbs">
+                    <a href="/" class="breadcrumbs__link">
+                        Главная
+                    </a>
 
-                    <div class="slider__info-text">
-                        рассрочка на 4 года<br> и всего от 1064 рублей в месяц
-                    </div>
+                    <span class="breadcrumbs__element">
+                        О проекте
+                    </span>
 
-                    <div class="slider__button">
-                        <a href="/" class="button button_slide">
-                            Узнать подробнее
-                        </a>
-                    </div>
+                    <span class="breadcrumbs__last">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.97 60.71"><title>Ресурс 1</title><g id="Слой_2" data-name="Слой 2"><g id="Layer_3" data-name="Layer 3"><polyline class="arrow-svg" points="33.72 1.06 2.21 32.56 34.22 59.56"/><line class="arrow-svg" x1="2.97" y1="32.56" x2="84.97" y2="32.56"/></g></g></svg>
+                    </span>
                 </div>
+            </div>
+
+            <div class="inner-header__title">
+                О проекте
             </div>
         </div>
+    </div>
 
-        <div class="slider__slide" style="background-image: url('./images/slide1.jpg');">
-            <img class="slider__slide-img" src="./images/slide.jpg" alt="">
+    <div class="inner-page">
+        <div class="inner-page__text-page">
+            <p>
+                Есть квартиры, дома, микрорайоны, города, в которые влюбляешься сразу, потому что… здесь хорошо. Именно это чувствуешь, когда приезжаешь в Новую Боровую. Европейский район в сердце Беларуси Новая Боровая – один из самых масштабных строительных проектов Минска. Район располагается на участке площадью более 100 гектар, рядом с главным проспектом столицы, в 15 минутах от станции метро.
+            </p>
 
-            <div class="slider__wrapper">
-                <div class="slider__info">
-                    <div class="slider__info-name">
-                        Всем по квартире<br> в новой боровой:
-                    </div>
+            <img src="./images/about1.jpg" class="inner-page__wide-img" alt="" title="">
 
-                    <div class="slider__button">
-                        <a href="/" class="button button_slide">
-                            Узнать подробнее
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            <p class="inner-page__title-text">Уручье.</p>
 
-    <div class="mainpage-content">
-        <div class="mainpage-content__thin-block">
-            <div class="mainpage-content__title-big">
-                Новая боровая.
-            </div>
+            <p>
+                В этом экологически чистом месте вырастет полноценный район размером в миллион квадратных метров (площадь 140 футбольных полей!). «А-10t0 Девелопмент» застраивает Новую Боровую по принципу SMART + SOCIAL, где сразу же всё продумано: парки, школы, детские сады, фитнес-центры, супермаркеты и поликлиника. Масштаб застройки впечатляет: помимо жилых домов здесь будет построено 9 детских садов, 4 школы, полноценная районная поликлиника. В Новой Боровой созданы уникальные для Беларуси стандарты инфраструктуры: закрытые дворы без машин, бесплатный Wi-Fi во дворах, круглосуточная система видеонаблюдения без «слепых зон», велопарковки, велодорожки.
+            </p>
 
-            <div class="mainpage-content__title">
-                Квартиры нового формата.
-            </div>
+            <img src="./images/about2.jpg" class="inner-page__wide-img" alt="" title="">
 
-            <div class="mainpage-content__text">
-                <p>Новая Боровая — масштабный проект компании «А-100 Девелопмент», строящийся по принципу SMART+SOCIAL. Благодаря своему выгодному месторасположению, район создает все условия для повышения качества жизни будущих жильцов. Продуманная инфраструктура, европейский подход к благоустройству и оформлению домов.</p>
-                <p>В «Новой Боровой» будет все: продуманная среда, использование современных технологий, условия необходимые человеку для развития и общения.</p>
-                <p>Район располагается рядом с проспектом Независимости и микрорайоном Уручье в 600 метрах от МКАД, в 15 минутах ходьбы от станции метро Уручье. Местоположение района отличает хорошая экология и близость лесного массива.</p>
-            </div>
-        </div>
+            <p>
+                Работы в Новой Боровой начались в 2014 году, и уже в 2017 будет завершен первый Кедровый квартал и детский сад на 150 мест. Застройщик строго соблюдает сроки – дома сдаются в срок, а социальная инфраструктура не отстаёт от жилых домов. Сейчас идёт активное строительство нового квартала, в котором помимо жилых домов будет подземный паркинг, детский сад, площадка для выгула домашних животных и сосновый парк.
+            </p>
 
-        <section class="slider-preview">
-            <a href="/" class="slider-preview__slide">
-                <div class="slider-preview__img" style="background-image: url('./images/sector3.jpg');">
+            <img src="./images/about3.jpg" class="inner-page__wide-img" alt="" title="">
 
-                </div>
+            <p class="inner-page__title-text">Закрытые дворы без машин</p>
 
-                <div class="slider-preview__wrapper">
-                    <img class="slider-preview__slide-img" src="./images/sector3.jpg" alt="">
-
-                    <div class="slider-preview__icon">
-                        <img src="./images/kedr.png" alt="">
-                    </div>
-
-                    <div class="slider-preview__title">
-                        Кедровый квартал
-                    </div>
-
-                    <div class="slider-preview__description">
-                        Квартиры с нестандартной </br>
-                        планировкой, квартиры-студии
-                    </div>
-                </div>
-            </a>
-
-            <a href="/" class="slider-preview__slide">
-                <div class="slider-preview__img" style="background-image: url('./images/sector2.jpg');">
-
-                </div>
-
-                <div class="slider-preview__wrapper">
-                    <img class="slider-preview__slide-img" src="./images/sector2.jpg" alt="">
-
-                    <div class="slider-preview__icon">
-                        <img src="./images/green.png" alt="">
-                    </div>
-
-                    <div class="slider-preview__title">
-                        Дом 8.14
-                    </div>
-
-                    <div class="slider-preview__description">
-                        Самый зелёный дом в квартале
-                    </div>
-                </div>
-            </a>
-
-            <a href="/" class="slider-preview__slide" >
-                <div class="slider-preview__img" style="background-image: url('./images/sector1.jpg');">
-
-                </div>
-
-                <div class="slider-preview__wrapper">
-                    <img class="slider-preview__slide-img" src="./images/sector1.jpg" alt="">
-
-                    <div class="slider-preview__icon">
-                        <img src="./images/kedr.png" alt="">
-                    </div>
-
-                    <div class="slider-preview__title">
-                        Сосновый квартал
-                    </div>
-
-                    <div class="slider-preview__description">
-                        Первый "квартал без автомобилей"
-                    </div>
-                </div>
-            </a>
-
-            <a href="/" class="slider-preview__slide">
-                <div class="slider-preview__img" style="background-image: url('./images/sector3.jpg');">
-
-                </div>
-
-                <div class="slider-preview__wrapper">
-                    <img class="slider-preview__slide-img" src="./images/sector3.jpg" alt="">
-
-                    <div class="slider-preview__icon">
-                        <img src="./images/kedr.png" alt="">
-                    </div>
-
-                    <div class="slider-preview__title">
-                        Кедровый квартал
-                    </div>
-
-                    <div class="slider-preview__description">
-                        Квартиры с нестандартной </br>
-                        планировкой, квартиры-студии
-                    </div>
-                </div>
-            </a>
-        </section>
-
-        <div class="mainpage-content__thin-block">
-            <div class="mainpage-content__title-second">
-                Уникальные проекты новой боровой
-            </div>
-
-            <div class="mainpage-content__text">
-                <p>Уже в продаже! Квартиры с террасами и эксплуатируемыми крышами и по доступной цене – это реально.</p>
-            </div>
-        </div>
-
-        <div class="video">
-            <video class="video__tag">
-                <source src="./video/nature.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-            </video>
-
-
-            <div class="video__button">
-                <div class="video__info">
-                    <div class="video__control">
-                        <div class="video__arrow"></div>
-                    </div>
-
-                    <div class="video__name">
-                        Виртуальная прогулка<br> по квартире с террасой
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="mainpage-content__padding-block">
-            <div class="options-preview">
-                <div class="options-preview__left">
-                    <div class="options-preview__title">
-                        Новые форматы квартир
-                    </div>
-
-                    <div class="options-preview__text">
-                        Новая Боровая – проект, в котором реализуются принципиально новые идеи того, каким должен быть ваш дом. Помимо стандартных решений мы предлагаем квартиры с уникальными характеристиками.
-                    </div>
-                </div>
-
-                <div class="options-preview__right">
-                    <div class="options-preview__row">
-                        <a href="/" class="options-preview__preview options-preview__preview_big">
-                            <div class="options-preview__img" style="background-image: url('./images/furniture.jpg');">
-
-                            </div>
-
-                            <div class="options-preview__wrapper">
-                                <img class="options-preview__seo-img" src="./images/furniture.jpg" alt="">
-
-                                <div class="options-preview__name">
-                                    С мебелью
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="/" class="options-preview__preview options-preview__preview_big">
-                            <div class="options-preview__img" style="background-image: url('./images/front.jpg');">
-
-                            </div>
-
-                            <div class="options-preview__wrapper">
-                                <img class="options-preview__seo-img" src="./images/front.jpg" alt="">
-
-                                <div class="options-preview__name">
-                                    С отделкой
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="options-preview__row">
-                        <a href="/" class="options-preview__preview options-preview__preview_middle">
-                            <div class="options-preview__img" style="background-image: url('./images/with-ter.jpg');">
-
-                            </div>
-
-                            <div class="options-preview__wrapper">
-                                <img class="options-preview__seo-img" src="./images/with-ter.jpg" alt="">
-
-                                <div class="options-preview__name">
-                                    С террасой
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="/" class="options-preview__preview options-preview__preview_middle">
-                            <div class="options-preview__img" style="background-image: url('./images/with-ter.jpg');">
-
-                            </div>
-
-                            <div class="options-preview__wrapper">
-                                <img class="options-preview__seo-img" src="./images/with-ter.jpg" alt="">
-
-                                <div class="options-preview__name">
-                                    С террасой
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="/" class="options-preview__preview options-preview__preview_middle">
-                            <div class="options-preview__img" style="background-image: url('./images/window.jpg');">
-
-                            </div>
-
-                            <div class="options-preview__wrapper">
-                                <img class="options-preview__seo-img" src="./images/window.jpg" alt="">
-
-                                <div class="options-preview__name">
-                                    Французские окна
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="mainpage-content__padding-block">
-            <div class="news-preview">
-                <div class="news-preview__preview-block">
-                    <div class="news-preview__preview news-preview__preview_small">
-                        <div class="news-preview__img" style="background-image: url('./images/news4.jpg');">
-                            <img class="news-preview__seo-img" src="./images/news4.jpg" alt="">
-                        </div>
-
-                        <div class="news-preview__title">
-                            Новости
-                        </div>
-
-                        <div class="news-preview__name">
-                            Яркая жизнь вместе<br> с “Новая Боровая”
-                        </div>
-                    </div>
-
-                    <div class="news-preview__preview news-preview__preview_small news-preview__preview_black">
-                        <div class="news-preview__img" style="background-image: url('./images/news3.jpg');">
-                            <img class="news-preview__seo-img" src="./images/news3.jpg" alt="">
-                        </div>
-
-                        <div class="news-preview__name">
-                            Профессионалы помогают<br> нашим покупателям</br> с дизайном квартиры
-                        </div>
-
-                        <div class="news-preview__bottom">
-                            <div class="news-preview__date">
-                                12/03/2017
-                            </div>
-
-                            <div class="news-preview__button">
-                                <a href="/" class="button button_news button_white">Подробнее</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="news-preview__preview-block">
-                    <div class="news-preview__preview">
-                        <div class="news-preview__img" style="background-image: url('./images/news1.jpg');">
-                            <img class="news-preview__seo-img" src="./images/news1.jpg" alt="">
-                        </div>
-
-                        <div class="news-preview__wrapper">
-
-                            <div class="news-preview__text">
-                                Все, что нужно! Стартовали продажи квартир-студий с отделкой и кухней
-                            </div>
-
-                            <div class="news-preview__bottom">
-                                <div class="news-preview__date">
-                                    12/03/2017
-                                </div>
-
-                                <div class="news-preview__button">
-                                    <a href="/" class="button button_news button_black">Подробнее</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="news-preview__preview-block">
-                    <div class="news-preview__preview">
-                        <div class="news-preview__img" style="background-image: url('./images/news2.jpg');">
-                            <img class="news-preview__seo-img" src="./images/news2.jpg" alt="">
-                        </div>
-
-                        <div class="news-preview__wrapper">
-
-                            <div class="news-preview__text">
-                                Все, что нужно! Стартовали продажи квартир-студий с отделкой и кухней
-                            </div>
-
-                            <div class="news-preview__bottom">
-                                <div class="news-preview__date">
-                                    12/03/2017
-                                </div>
-
-                                <div class="news-preview__button">
-                                    <a href="/" class="button button_news button_black">Подробнее</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <p>
+                Новая Боровая спроектирована по принципу «двор без машин». Оставить автомобиль можно будет по периметру квартала или в подземном паркинге. Для комфорта владельцев автомобилей в зданиях, расположенных рядом с наземными парковками, будут сделаны сквозные подъезды. Это позволит сократить дорогу от квартиры до автомобиля до минимума, при этом всегда будет удобный выход во внутренний закрытый двор. Удобно, не так ли?Важно, что обеспеченность жителей парковочными местами будет одной из самых высоких в Минске: на каждую квартиру, по плану, приходится одно парковочное место.
+            </p>
         </div>
     </div>
 

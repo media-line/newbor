@@ -1,0 +1,50 @@
+.loyalty-company-detail {
+    width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    font-family: "PT Sans", sans-serif;
+    padding-top: 40px;
+
+    &__img {
+        margin-right: 8%;
+        min-width: 20%;
+        width: 20%;
+    }
+
+    &__info {
+        width: 72%;
+        min-width: 72%;
+        color: $gray;
+        line-height: 1.5;
+        font-size: 18px;
+    }
+
+    &__text {
+        padding-bottom: 25px;
+    }
+
+    &__discount {
+        padding-bottom: 5px;
+    }
+
+    &__discount-number {
+        font-weight: 700;
+    }
+
+    &__discount-img {
+        img {
+            max-width: 160px;
+            box-shadow: 2px 2px 9px 1px rgba($gray-dark, 0.5);
+        }
+    }
+
+    &__title {
+        font-size: 32px;
+        padding-bottom: 5px;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        color: $gray-dark;
+    }
+}

@@ -1,11 +1,10 @@
 .text-images {
-    margin: 0 -50px;
     padding: 20px 0;
     display: flex;
 
     &__img-hidden {
-        height: 0;
         opacity: 0;
+        visibility: hidden;
     }
 
     &__img {
