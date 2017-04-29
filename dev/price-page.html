@@ -15,8 +15,8 @@
     <script src="/js/socialButtons.js"></script>
     <script src="/js/timer.js"></script>
     <script src="/js/breadcrumbs.js"></script>
-    <script src="/js/contactsPage.js"></script>
-    <script src="/js/contacts.js"></script>
+    <script src="/js/pricePage.js"></script>
+    <script src="/js/priceList.js"></script>
 
 
     <script src="/js/common.js"></script>
@@ -255,57 +255,133 @@
         </div>
     </header>
 
-    <div class="contacts">
-        <div id="contacts__map"></div>
+    <div class="inner-page">
+        <div class="breadcrumbs">
+            <a href="/" class="breadcrumbs__link">
+                Главная
+            </a>
 
-        <div class="contacts__inner">
-            <div class="contacts__inner-page">
-                <div class="breadcrumbs">
-                    <a href="/" class="breadcrumbs__link">
-                        Главная
-                    </a>
+            <span class="breadcrumbs__element">
+                Цены
+            </span>
 
-                    <span class="breadcrumbs__element">
-                        Контакты
-                    </span>
+            <span class="breadcrumbs__last">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.97 60.71"><title>Ресурс 1</title><g id="Слой_2" data-name="Слой 2"><g id="Layer_3" data-name="Layer 3"><polyline class="arrow-svg" points="33.72 1.06 2.21 32.56 34.22 59.56"/><line class="arrow-svg" x1="2.97" y1="32.56" x2="84.97" y2="32.56"/></g></g></svg>
+            </span>
+        </div>
 
-                    <span class="breadcrumbs__last">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.97 60.71"><title>Ресурс 1</title><g id="Слой_2" data-name="Слой 2"><g id="Layer_3" data-name="Layer 3"><polyline class="arrow-svg" points="33.72 1.06 2.21 32.56 34.22 59.56"/><line class="arrow-svg" x1="2.97" y1="32.56" x2="84.97" y2="32.56"/></g></g></svg>
-                    </span>
+        <div class="price-list">
+            <div class="price-list__title-page">
+                Цены
+            </div>
+
+            <div class="price-list__prev-text">
+                Уважаемые клиенты, подробную информацию о стоимости, наличии квартир и условиях покупки вы можете узнать по телефонам колл-центра:<br>
+                <span class="price-list__phone">+375 29 300 00 000</span>
+            </div>
+
+            <div class="price-list__house">
+                <div class="price-list__img">
+                    <img src="./images/house1.jpg">
                 </div>
 
-                <div class="contacts__info">
-                    <div class="contacts__title">
-                        Контакты
+                <div class="price-list__info">
+                    <div class="price-list__title">
+                        Дом номер 8.14
                     </div>
 
-                    <div class="contacts__phone">
-                        +375 (44) 748-81-36
+                    <div class="price-list__description">
+                        Чтобы стать счастливым обладателем собственной “однушки” в Новой Боровой нужно внести 40% взноса от стоимости квартиры, а затем выплачивать оставшуюся сумму по 1064 рублей каждый месяц в течение четырёх лет.
                     </div>
 
-                    <div class="contacts__block">
-                        <p><b>Режим работы отдела продаж</b></p>
-                        <p>понедельник–пятница: 8:30–20:00</p>
-                        <p>суббота, воскресенье: 10:00–16:00</p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <p><b>Расположение</b></p>
-                        <p>ул. Леонардо да Винчи, 2, д. Копище, Минский район</p>
-                        <p>(10-этажный дом, отдельный вход в торговый этаж)</p>
-                        <p></p>
-                        <p></p>
-                        <p><b>Как добраться</b></p>
-                        <p><u>На общественном транспорте</u></p>
-                        <ul>
-                            <li>остановка «ул. Гинтовта» — 99 автобус и 2 троллейбус;</li>
-                            <li>остановка «Поликлиника №28» — автобусы 113с, 33</li>
-                        </ul>
-                        <p><u>На автомобиле</u></p>
-                        <ul>
-                            <li>двигаясь по ул. Гинтовта в сторону МКАД поверните направо к зданию МЧС, далее прямо 450 метров. Двигаясь со стороны МКАД поверните налево сразу за троллейбусным парком. Ближайший адрес для поездки по навигатору или на такси — ул. Гинтовта, 5А</li>
-                        </ul>
+                    <table class="price-list__table">
+                        <tr>
+                            <td>Однокомнатные</td>
+                            <td>от 2300* руб./м²</td>
+                        </tr>
+
+                        <tr>
+                            <td>Двухкомнатные</td>
+                            <td>проданы</td>
+                        </tr>
+
+                        <tr>
+                            <td>Трехкомнатные</td>
+                            <td>от 2200* руб./м²</td>
+                        </tr>
+                    </table>
+
+                    <a href="/" class="button button_price button_black-green">Подобрать квартиру</a>
+                </div>
+            </div>
+
+            <div class="price-list__house">
+                <div class="price-list__img">
+                    <img src="./images/house2.jpg">
+                </div>
+
+                <div class="price-list__info">
+                    <div class="price-list__title">
+                        Дом номер 8.14
                     </div>
+
+                    <div class="price-list__description">
+                        Чтобы стать счастливым обладателем собственной “однушки” в Новой Боровой нужно внести 40% взноса от стоимости квартиры, а затем выплачивать оставшуюся сумму по 1064 рублей каждый месяц в течение четырёх лет.
+                    </div>
+
+                    <table class="price-list__table">
+                        <tr>
+                            <td>Однокомнатные</td>
+                            <td>от 2300* руб./м²</td>
+                        </tr>
+
+                        <tr>
+                            <td>Двухкомнатные</td>
+                            <td>проданы</td>
+                        </tr>
+
+                        <tr>
+                            <td>Трехкомнатные</td>
+                            <td>от 2200* руб./м²</td>
+                        </tr>
+                    </table>
+
+                    <a href="/" class="button button_price button_black-green">Подобрать квартиру</a>
+                </div>
+            </div>
+
+            <div class="price-list__house">
+                <div class="price-list__img">
+                    <img src="./images/house1.jpg">
+                </div>
+
+                <div class="price-list__info">
+                    <div class="price-list__title">
+                        Дом номер 8.14
+                    </div>
+
+                    <div class="price-list__description">
+                        Чтобы стать счастливым обладателем собственной “однушки” в Новой Боровой нужно внести 40% взноса от стоимости квартиры, а затем выплачивать оставшуюся сумму по 1064 рублей каждый месяц в течение четырёх лет.
+                    </div>
+
+                    <table class="price-list__table">
+                        <tr>
+                            <td>Однокомнатные</td>
+                            <td>от 2300* руб./м²</td>
+                        </tr>
+
+                        <tr>
+                            <td>Двухкомнатные</td>
+                            <td>проданы</td>
+                        </tr>
+
+                        <tr>
+                            <td>Трехкомнатные</td>
+                            <td>от 2200* руб./м²</td>
+                        </tr>
+                    </table>
+
+                    <a href="/" class="button button_price button_black-green">Подобрать квартиру</a>
                 </div>
             </div>
         </div>

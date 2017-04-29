@@ -13,15 +13,15 @@
     <script src="/js/slideMenu.js"></script>
     <script src="/js/bottomMenu.js"></script>
     <script src="/js/socialButtons.js"></script>
+    <script src="/js/formatPage.js"></script>
+    <script src="/js/formatDetail.js"></script>
     <script src="/js/timer.js"></script>
     <script src="/js/breadcrumbs.js"></script>
-    <script src="/js/contactsPage.js"></script>
-    <script src="/js/contacts.js"></script>
+    <script src="/js/pagination.js"></script>
 
 
     <script src="/js/common.js"></script>
     <script src="/js/inner.js"></script>
-
 
     <!--[if lte IE 9]><script src="<a href="http://phpbbex.com/oldies/oldies.js">http://phpbbex.com/oldies/oldies.js</a>" charset="utf-8"></script><![endif]-->
 </head>
@@ -255,58 +255,68 @@
         </div>
     </header>
 
-    <div class="contacts">
-        <div id="contacts__map"></div>
+    <div class="inner-header" style='background-image: url(./images/format-header.jpg);'>
+        <img class="inner-header__img-hidden" src="./images/format-header.jpg" alt="" title="">
 
-        <div class="contacts__inner">
-            <div class="contacts__inner-page">
+        <div class="inner-header__wrapper">
+            <div class="inner-header__breadcrumbs">
                 <div class="breadcrumbs">
                     <a href="/" class="breadcrumbs__link">
                         Главная
                     </a>
 
+                    <a href="/" class="breadcrumbs__link">
+                        О проекте
+                    </a>
+
                     <span class="breadcrumbs__element">
-                        Контакты
+                        Квартиры с террасами
                     </span>
 
                     <span class="breadcrumbs__last">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.97 60.71"><title>Ресурс 1</title><g id="Слой_2" data-name="Слой 2"><g id="Layer_3" data-name="Layer 3"><polyline class="arrow-svg" points="33.72 1.06 2.21 32.56 34.22 59.56"/><line class="arrow-svg" x1="2.97" y1="32.56" x2="84.97" y2="32.56"/></g></g></svg>
                     </span>
                 </div>
+            </div>
 
-                <div class="contacts__info">
-                    <div class="contacts__title">
-                        Контакты
-                    </div>
+            <div class="inner-header__title">
+                Квартиры с террасами
+            </div>
+        </div>
+    </div>
 
-                    <div class="contacts__phone">
-                        +375 (44) 748-81-36
-                    </div>
+    <div class="inner-page">
+        <div class="format-detail inner-page__point">
+            <div class="format-detail__before-text">
+                <p>В новом квартале Новой Боровой террасы и оборудованная кровля сделали новый виток своего развития, став ещё более привлекательными.</p>
+                <p>Террасы располагаются на первых этажах домов, на той стороне, что находятся в закрытых дворах без машин. Террасы стали в несколько раз больше, самые большие – порядка 29 квадратных метров, при этом есть и более компактные, площадью 12, 16 или 20 метров. На всех террасах без исключения установлены выдвижные козырьки-маркизы с электрическим приводом. Выход на террасы осуществляется напрямую из квартиры через стеклянные балконные двери, для безопасности оборудованные роллетами.</p>
+            </div>
 
-                    <div class="contacts__block">
-                        <p><b>Режим работы отдела продаж</b></p>
-                        <p>понедельник–пятница: 8:30–20:00</p>
-                        <p>суббота, воскресенье: 10:00–16:00</p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <p><b>Расположение</b></p>
-                        <p>ул. Леонардо да Винчи, 2, д. Копище, Минский район</p>
-                        <p>(10-этажный дом, отдельный вход в торговый этаж)</p>
-                        <p></p>
-                        <p></p>
-                        <p><b>Как добраться</b></p>
-                        <p><u>На общественном транспорте</u></p>
-                        <ul>
-                            <li>остановка «ул. Гинтовта» — 99 автобус и 2 троллейбус;</li>
-                            <li>остановка «Поликлиника №28» — автобусы 113с, 33</li>
-                        </ul>
-                        <p><u>На автомобиле</u></p>
-                        <ul>
-                            <li>двигаясь по ул. Гинтовта в сторону МКАД поверните направо к зданию МЧС, далее прямо 450 метров. Двигаясь со стороны МКАД поверните налево сразу за троллейбусным парком. Ближайший адрес для поездки по навигатору или на такси — ул. Гинтовта, 5А</li>
-                        </ul>
+            <img src="./images/format1.jpg" class="inner-page__wide-img">
+
+            <p>Сами террасы выложены не плиткой или керамогранитом, а застелены стойкой к воздействию влаги лиственницей, чтобы создать домашнюю атмосферу уюта, куда летом можно выходить босиком прямо из квартиры. Со внешней стороны террасы отгорожены закалённым стеклом, а по их периметру высажены туи. На террасах установлены цветочницы с уже высаженными цветами.</p>
+
+            <div class="video">
+                <video class="video__tag">
+                    <source src="./video/nature.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                </video>
+
+
+                <div class="video__button">
+                    <div class="video__info">
+                        <div class="video__control">
+                            <div class="video__arrow"></div>
+                        </div>
+
+                        <div class="video__name">
+                            Виртуальная прогулка<br> по квартире с террасой
+                        </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="format-detail__slider">
+                
             </div>
         </div>
     </div>

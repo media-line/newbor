@@ -6,8 +6,26 @@
         top: 0;
     }
 
+    &__inner-page {
+        padding-top: 40px;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+        font-family: "PT Sans", sans-serif;
+        color: $gray-dark;
+
+        p {
+            padding-bottom: 8px;
+        }
+
+        .breadcrumbs {
+            margin-left: -50px;
+        }
+    }
+
     &__info {
-        margin: 20px 0 0 50px;
+        margin-top: 20px;
         background-color: $white;
         padding: 25px 30px;
         color: $gray-dark;

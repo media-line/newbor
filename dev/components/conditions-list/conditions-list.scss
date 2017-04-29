@@ -1,0 +1,50 @@
+.conditions-list {
+    font-family: "Roboto", sans-serif;
+    color: $gray-dark;
+    font-size: 18px;
+    width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__title-page {
+        font-size: 40px;
+        text-align: center;
+        font-weight: 500;
+        color: $gray-dark;
+        padding: 10px 0 15px 0;
+    }
+
+    &__type {
+        display: flex;
+
+        & + .conditions-list__type {
+            padding-top: 35px;
+        }
+    }
+
+    &__img {
+        width: 38%;
+        min-width: 38%;
+        margin-right: 5%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__info {
+        width: 57%;
+        min-width: 57%;
+    }
+
+    &__title {
+        font-weight: 300;
+        font-size: 36px;
+        padding: 5px 0 15px 0;
+    }
+
+    &__description {
+        line-height: 1.4;
+        padding-bottom: 15px;
+    }
+}

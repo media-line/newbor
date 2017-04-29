@@ -1,0 +1,25 @@
+.format-detail {
+    font-size: 18px;
+    line-height: 1.5;
+    color: $gray-dark;
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__before-text {
+        width: 860px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .video {
+        margin-left: -50px;
+        margin-right: -50px;
+    }
+
+    &__slider {
+        margin-left: -50px;
+        margin-right: -50px;
+        box-shadow: 0 0 12px $gray-light;
+    }
+}

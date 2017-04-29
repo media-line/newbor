@@ -33,7 +33,7 @@
     }
 
     p {
-        padding-bottom: 8px;
+        padding-bottom: 10px;
     }
 
     &__title-text {
@@ -45,5 +45,10 @@
 
     &__text-page {
         line-height: 1.4;
+    }
+
+    .video {
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
