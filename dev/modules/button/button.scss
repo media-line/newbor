@@ -13,6 +13,7 @@
     cursor: pointer;
     transition: 0.5s;
     outline: none;
+    text-shadow: none;
 
     &_slide {
         font-size: 18px;
@@ -87,5 +88,12 @@
     &_format {
         font-size: 15px;
         padding: 8px 20px;
+    }
+
+    &_apartment {
+        display: block;
+        text-align: center;
+        text-transform: lowercase;
+        padding: 7px 0;
     }
 }

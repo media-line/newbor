@@ -20,6 +20,8 @@
         text-decoration: none;
 
         &:hover {
+            text-decoration: none;
+            
             .loyalty-categories-list__hover {
                 transform: translate(0, 0);
             }

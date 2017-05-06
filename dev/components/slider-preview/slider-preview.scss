@@ -94,7 +94,7 @@
             right: 10px;
         }
 
-        &:before {
+        /*&:before {
             transform: scale(0);
             z-index: 1;
             content: '';
@@ -111,12 +111,14 @@
             border-bottom: 2px solid $green;
             border-left: 2px solid $green;
             transform-origin: 0 100%;
-        }
+        }*/
 
         &:hover {
-            &:before {
+            /*&:before {
                 transform: scale(1);
-            }
+            }*/
+            border-left: 2px solid $green;
+            border-bottom: 2px solid $green;
         }
 
         &_next {

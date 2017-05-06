@@ -1,0 +1,175 @@
+.apartments-list {
+    font-family: "PT Sans", sans-serif;
+    color: $gray-dark;
+    width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__title {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 36px;
+        padding: 10px 0 5px 0;
+        text-align: center;
+    }
+
+    &__under-title {
+        font-size: 18px;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    &__results-all {
+        padding: 15px 40px 25px 40px;
+        font-size: 18px;
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+    }
+
+    &__sort {
+        padding: 5px 40px;
+        background-color: $filter;
+    }
+
+    &__sorts {
+        display: flex;
+        align-items: center;
+        padding-bottom: 5px;
+    }
+
+    &__sort-fields {
+        + .apartments-list__sort-fields {
+            margin-left: 60px;
+        }
+    }
+
+    &__sort-title {
+        font-size: 18px;
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+        padding-bottom: 5px;
+        padding-left: 10px;
+    }
+
+    &__show-min {
+        font-size: 14px;
+        font-weight: 700;
+        text-decoration: none;
+        color: $gray-dark;
+        padding-bottom: 1px;
+        @include link-decoration-inverse ($gray-dark, 1px, 0.5s);
+        margin-left: auto;
+    }
+
+    &__apartments {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__apartment {
+        min-width: 25%;
+        width: 25%;
+        box-sizing: border-box;
+        padding: 10px 25px;
+
+        border-right: 1px solid $filter;
+        border-bottom: 1px solid $filter;
+        box-sizing: border-box;
+        transition: 0.5s;
+        box-shadow: 3px 3px 3px transparent;
+
+        &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+            border-top: 1px solid $filter;
+        }
+
+        &:nth-child(4n+1) {
+            border-left: 1px solid $filter;
+        }
+
+        &_hover {
+            box-shadow: 3px 3px 3px rgba($gray, 0.7);
+
+            .apartments-list__apartment-img {
+                opacity: 0;
+            }
+        }
+    }
+
+    &__apartment-img-hover {
+        height: 260px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    &__apartment-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: 0.5s;
+        opacity: 1;
+    }
+
+    &__apartment-img-hidden {
+        height: 0;
+        opacity: 0;
+    }
+
+    &__apartment-info {
+        font-weight: 700;
+        font-size: 14px;
+        position: relative;
+        color: $gray-dark;
+
+        p {
+            padding-bottom: 10px;
+        }
+    }
+
+    &__mail {
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+
+        &:hover {
+            .mail-to-svg {
+                fill: $gray-dark;
+
+                &_line {
+                    fill: $green-light;
+                }
+            }
+        }
+
+        svg {
+            width: 35px;
+        }
+    }
+
+    .mail-to-svg {
+        fill: $green-light;
+        transition: 0.5s;
+    }
+
+    &__next {
+        text-align: right;
+        padding: 10px 0;
+    }
+
+    &__next-url {
+        text-decoration: none;
+        color: $gray-dark;
+        padding-bottom: 1px;
+        @include link-decoration-inverse ($gray-dark, 1px, 0.5s);
+        font-size: 14px;
+        font-weight: 700;
+    }
+}

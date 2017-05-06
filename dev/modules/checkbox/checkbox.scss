@@ -1,0 +1,68 @@
+.checkbox {
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'PT Sans', sans-serif;
+    display: inline-block;
+
+    &__input {
+        outline: none;
+        opacity: 0;
+        height: 1px;
+        width: 1px;
+        position: absolute;
+
+        &:checked + .checkbox__field {
+            background-color: $green;
+            border: 2px solid $green;
+
+            .check-svg {
+                fill: $white;
+            }
+        }
+    }
+
+    &__field {
+        border: 2px solid $black-light;
+        border-radius: 2px;
+        height: 24px;
+        width: 24px;
+        display: inline-block;
+        cursor: pointer;
+        margin-right: 5px;
+        vertical-align: middle;
+        transition: 0.5s;
+        position: relative;
+        background-color: transparent;
+        text-align: center;
+        box-sizing: border-box;
+        padding-top: 3px;
+    }
+
+    .check-svg {
+        fill: transparent;
+        transition: 0.5s;
+    }
+
+    svg {
+        width: 15px;
+    }
+
+    &_button {
+        .checkbox__field {
+            color: $gray;
+            font-family: "Roboto", sans-serif;
+            margin-right: 0;
+        }
+
+        .checkbox__input {
+            &:checked + .checkbox__field {
+                color: $white;
+
+                .check-svg {
+                    fill: transparent;
+                }
+            }
+        }
+
+    }
+}

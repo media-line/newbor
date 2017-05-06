@@ -21,5 +21,17 @@
         margin-left: -50px;
         margin-right: -50px;
         box-shadow: 0 0 12px $gray-light;
+        padding: 15px 0;
+    }
+
+    &__slider-wrapper {
+        width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__button {
+        text-align: center;
+        padding-top: 40px;
     }
 }

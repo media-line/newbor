@@ -14,7 +14,7 @@ module.exports = {
         timer: __dirname + '/dev/components/timer/timer',
         breadcrumbs: __dirname + '/dev/components/breadcrumbs/breadcrumbs',
         pagination: __dirname + '/dev/components/pagination/pagination',
-        /*slider: __dirname + '/dev/components/slider/slider',
+        slider: __dirname + '/dev/components/slider/slider',
         sliderPreview: __dirname + '/dev/components/slider-preview/slider-preview',
         optionsPreview: __dirname + '/dev/components/options-preview/options-preview',
         newsPreview: __dirname + '/dev/components/news-preview/news-preview',
@@ -26,16 +26,20 @@ module.exports = {
         contacts: __dirname + '/dev/components/contacts/contacts',
         priceList: __dirname + '/dev/components/price-list/price-list',
         conditionsList: __dirname + '/dev/components/conditions-list/conditions-list',
-        formatsList: __dirname + '/dev/components/formats-list/formats-list',*/
+        formatsList: __dirname + '/dev/components/formats-list/formats-list',
         formatDetail: __dirname + '/dev/components/format-detail/format-detail',
         sliderLayout: __dirname + '/dev/components/slider-layout/slider-layout',
+        map: __dirname + '/dev/components/map/map',
+        apartmentsList: __dirname + '/dev/components/apartments-list/apartments-list',
+        video: __dirname + '/dev/components/video/video',
         
-        error404: __dirname + '/dev/modules/error-404/error-404',
+        
+        
         common: __dirname + '/dev/modules/common/common',
         mainpage: __dirname + '/dev/modules/mainpage/mainpage',
         inner: __dirname + '/dev/modules/inner/inner',
     
-        /*mainpagePage: __dirname + '/dev/mainpage',
+        mainpagePage: __dirname + '/dev/mainpage',
         newsPage: __dirname + '/dev/news-page',
         newsDetailPage: __dirname + '/dev/news-detail-page',
         loyaltyCompaniesPage: __dirname + '/dev/loyalty-companies-page',
@@ -46,8 +50,10 @@ module.exports = {
         contactsPage: __dirname + '/dev/contacts-page',
         pricePage: __dirname + '/dev/price-page',
         conditionsPage: __dirname + '/dev/conditions-page',
-        formatsPage: __dirname + '/dev/formats-page',*/
+        formatsPage: __dirname + '/dev/formats-page',
         formatPage: __dirname + '/dev/format-page',
+        infrastructurePage: __dirname + '/dev/infrastructure-page',
+        apartmentsPage: __dirname + '/dev/apartments-page',
     }, 
     output: {
         path: __dirname + '/public',

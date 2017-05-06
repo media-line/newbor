@@ -18,6 +18,9 @@
         right: 0;
         bottom: 0;
         background-color: rgba($black, 0.3);
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
     }
 
     &__img {
@@ -27,6 +30,9 @@
         right: 0;
         bottom: 0;
         z-index: -1;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     &__seo-img {
@@ -38,10 +44,8 @@
         font-family: 'PT Sans', sans-serif;
         font-size: 16px;
         line-height: 1.2;
-        position: absolute;
-        bottom: 80px;
-        left: 15px;
-        right: 15px;
+        margin-top: auto;
+        padding-bottom: 30px;
     }
 
     &__date {
@@ -53,10 +57,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        position: absolute;
-        bottom: 15px;
-        left: 15px;
-        right: 15px;
     }
 
     &__preview {
@@ -90,7 +90,6 @@
         font-family: "Roboto", sans-serif;
         font-weight: 500;
         text-transform: uppercase;
-        padding-bottom: 25px;
     }
 
     &__name {

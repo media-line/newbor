@@ -1,0 +1,67 @@
+.apartments-filter {
+    padding: 15px 25px 20px 25px;
+    background-color: $filter;
+
+    &__progress {
+        vertical-align: middle;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .radio-button {
+        & + .radio-button {
+            margin-left: 20px;
+        }
+    }
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__filter-title {
+        padding-bottom: 8px;
+        font-family: "Roboto", sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    &__filter-block {
+        text-align: center;
+        display: inline-block;
+        vertical-align: top;
+
+        & + .apartments-filter__filter-block {
+            margin-left: 25px;
+        }
+
+        &_checkboxes {
+            text-align: left;
+
+            .apartments-filter__filter-title {
+                text-align: center;
+            }
+
+            .checkbox {
+                display: block;
+                padding-bottom: 7px;
+            }
+        }
+
+        &_wide {
+            .ui-slide-range__value-field {
+                width: 80px;
+            }
+        }
+    }
+
+    &__sup {
+        position: relative;
+        top: -5px;
+        font-size: 10px;
+    }
+
+    &__block-right {
+        min-width: 200px;
+    }
+}
