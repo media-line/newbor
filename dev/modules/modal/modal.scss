@@ -22,6 +22,7 @@ body.modal__open {
         align-items: center;
         justify-content: center;
         height: 100%;
+        overflow: hidden;
     }
 
     &_open {
@@ -45,6 +46,8 @@ body.modal__open {
         z-index: 1010;
         position: relative;
         margin: 30px 0;
+        max-height: 100%;
+        overflow-y: auto;
 
         &_wide {
             width: 700px;
@@ -68,6 +71,10 @@ body.modal__open {
         background-color: rgba($white, 0.94);
         padding: 15px;
         position: relative;
+
+        &_padding {
+            padding: 50px;
+        }
 
         svg {
             width: 20px;

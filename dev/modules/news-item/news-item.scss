@@ -7,9 +7,41 @@
         width: 260px;
         margin-right: 20px;
         height: 190px;
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+            .news-item__img-hover {
+                opacity: 1;
+            }
+
+            .news-item__img-wrap {
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    &__img-wrap {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        transition: 0.5s;
+    }
+
+    &__img-hover {
+        background-color: rgba($black, 0.3);
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        opacity: 0;
+        transition: 0.5s;
     }
 
     &__img-hidden {
@@ -48,5 +80,19 @@
 
     & + .news-item {
         padding-top: 35px;
+    }
+
+    &_active {
+        .news-item__img-hover {
+            opacity: 1;
+        }
+
+        .news-item__img-wrap {
+            transform: scale(1.2);
+        }
+
+        .news-item__title {
+            color: $green;
+        }
     }
 }

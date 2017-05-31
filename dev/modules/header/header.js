@@ -2,9 +2,6 @@
 
 import './header.scss';
 
-import './../modal/modal';
-import './../order-form/order-form';
-
 const $header = '.header';
 const $headerFix = '.header__fix';
 

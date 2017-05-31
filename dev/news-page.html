@@ -9,6 +9,7 @@
 
     <meta name="viewport" content="width=1320">
 
+    <script src="/js/commonWebpack.js"></script>
     <script src="/js/topMenu.js"></script>
     <script src="/js/slideMenu.js"></script>
     <script src="/js/bottomMenu.js"></script>
@@ -284,9 +285,13 @@
     <div class="inner-page">
         <div class="news-list">
             <div class="news-item">
-                <div class="news-item__img" style="background-image: url('./images/news-list1.jpg');">
-                    <img class="news-item__img-hidden" src="./images/news-list1.jpg" alt="" title="">
-                </div>
+                <a href="/" class="news-item__img">
+                    <div class="news-item__img-wrap" style="background-image: url('./images/news-list1.jpg');">
+                        <img class="news-item__img-hidden" src="./images/news-list1.jpg" alt="" title="">
+                    </div>
+
+                    <div class="news-item__img-hover"></div>
+                </a>
 
                 <div class="news-item__info">
                     <div class="news-item__date">

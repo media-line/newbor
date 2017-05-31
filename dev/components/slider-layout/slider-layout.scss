@@ -10,7 +10,7 @@
         height: 300px;
         min-width: 170px;
         width: 170px;
-        background-size: cover;
+        background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
     }
@@ -46,6 +46,7 @@
 
     &__format-value {
         font-weight: 700;
+        text-transform: lowercase;
     }
 
     &__chars {

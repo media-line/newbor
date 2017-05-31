@@ -23,6 +23,15 @@
         flex-direction: column;
     }
 
+    &__img-wrapper {
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
     &__img {
         position: absolute;
         top: 0;
@@ -33,6 +42,8 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        transition: 0.7s;
+        transform: scale(1.1);
     }
 
     &__seo-img {
@@ -66,6 +77,24 @@
         left: 0;
         right: 0;
         bottom: 0;
+        display: block;
+        color: $white;
+
+        &_link {
+            &:hover {
+                color: $white;
+
+                .news-preview__img {
+                    transform: scale(1);
+                }
+
+                .button {
+                    background-color: $black;
+                    border: 2px solid $black;
+                    color: $white;
+                }
+            }
+        }
 
         &_small {
             height: 172.5px;

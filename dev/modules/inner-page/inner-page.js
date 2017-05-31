@@ -4,7 +4,7 @@ import './inner-page.scss';
 
 const $container = '.inner-page';
 const $containerPoint = '.inner-page__point';
-const $wideImage = '.inner-page__wide-img';
+const $wideImage = '.wide';
 const wideImageWrapper = 'inner-page__img-wrapper';
 
 let resizeTimer;

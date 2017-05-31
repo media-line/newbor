@@ -26,8 +26,9 @@
         margin-right: auto;
     }
 
-    &__wide-img {
+    .wide {
         width: 100%;
+        height: auto;
         margin-top: 20px;
         margin-bottom: 25px;
     }
@@ -40,6 +41,25 @@
     ul, ol {
         line-height: 1.4;
         padding-bottom: 10px;
+    }
+
+    ul {
+        li {
+            &:before {
+                content: '';
+                height: 4px;
+                width: 4px;
+                border-radius: 100%;
+                background-color: $gray-dark;
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 5px;
+            }
+
+            & + li {
+                padding-top: 5px;
+            }
+        }
     }
 
     &__title-text {
@@ -56,5 +76,9 @@
     .video {
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+
+    &__breadcrumbs {
+        padding-bottom: 20px;
     }
 }

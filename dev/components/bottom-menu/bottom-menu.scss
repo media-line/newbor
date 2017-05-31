@@ -10,6 +10,10 @@
         text-decoration: none;
         font-size: 13px;
         @include link-decoration ($white, 1px, 0.5s);
+
+        &:hover {
+            color: $white;
+        }
     }
 
     &_big {

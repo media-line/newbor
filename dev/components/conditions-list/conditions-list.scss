@@ -20,27 +20,88 @@
         & + .conditions-list__type {
             padding-top: 35px;
         }
-    }
 
-    &__img {
-        width: 38%;
-        min-width: 38%;
-        margin-right: 5%;
+        &_active {
+            .conditions-list__img-wrap {
+                transform: scale(1);
+            }
 
-        img {
-            width: 100%;
+            .conditions-list__img-hover {
+                opacity: 1;
+            }
+
+            .conditions-list__title {
+                color: $green;
+            }
+
+            .button {
+                background-color: $green;
+                border: 2px solid $green;
+                color: $white;
+            }
         }
     }
 
-    &__info {
-        width: 57%;
-        min-width: 57%;
+    &__img {
+        min-width: 260px;
+        width: 260px;
+        margin-right: 20px;
+        height: 190px;
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+            .conditions-list__img-wrap {
+                transform: scale(1);
+            }
+
+            .conditions-list__img-hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__img-wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: scale(1.2);
+        transition: 0.5s;
+    }
+
+    &__img-hidden {
+        height: 0;
+        opacity: 0;
+    }
+
+    &__img-hover {
+        background-color: rgba(12, 28, 34, 0.3);
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        opacity: 0;
+        transition: 0.5s;
     }
 
     &__title {
         font-weight: 300;
         font-size: 36px;
-        padding: 5px 0 15px 0;
+        margin: 5px 0 15px 0;
+        text-decoration: none;
+        color: $black;
+        transition: 0.5s;
+        display: inline-block;
+
+        &:hover {
+            color: $green;
+        }
     }
 
     &__description {

@@ -32,6 +32,9 @@ module.exports = {
         map: __dirname + '/dev/components/map/map',
         apartmentsList: __dirname + '/dev/components/apartments-list/apartments-list',
         video: __dirname + '/dev/components/video/video',
+        orderForm: __dirname + '/dev/components/order-form/order-form',
+        apartmentsList: __dirname + '/dev/components/apartments-list/apartments-list',
+        gallery: __dirname + '/dev/components/gallery/gallery',
         
         
         
@@ -54,6 +57,7 @@ module.exports = {
         formatPage: __dirname + '/dev/format-page',
         infrastructurePage: __dirname + '/dev/infrastructure-page',
         apartmentsPage: __dirname + '/dev/apartments-page',
+        galleryPage: __dirname + '/dev/gallery-page',
     }, 
     output: {
         path: __dirname + '/public',
@@ -123,10 +127,10 @@ module.exports = {
     
     plugins: [
         new webpack.NoEmitOnErrorsPlugin(),
-        /*new webpack.optimize.CommonsChunkPlugin({
-            name: 'test',
-            minChunks: 2,
-        }),*/
+        new webpack.optimize.CommonsChunkPlugin({
+            name: 'commonWebpack',
+            minChunks: 3,
+        }),
         /*new webpack.optimize.UglifyJsPlugin({
             compress: {
                 warnings: false,
@@ -140,7 +144,8 @@ module.exports = {
         new webpack.ProvidePlugin({
             $: "jquery",
             jQuery: "jquery",
-            "window.jQuery": "jquery"
+            "window.jQuery": "jquery",
+            Promise: "bluebird"
         }),
         new webpack.EnvironmentPlugin({
             NODE_ENV: NODE_ENV

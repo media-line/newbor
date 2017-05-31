@@ -6,8 +6,18 @@ const $modalButton = '.modal__order-button';
 const $modal = '.modal';
 const $closeButton = '.modal__close';
 const $layout = '.modal__background';
-const bodyModalOpen = 'modal__open'
-const modalOpen = 'modal_open'
+const bodyModalOpen = 'modal__open';
+const modalOpen = 'modal_open';
+
+export function closeModal () {
+    $($modal).removeClass(modalOpen);
+    $('body').removeClass(bodyModalOpen);
+}
+
+export function openModal (attr) {
+    $('body').addClass(bodyModalOpen);
+    $('.modal[data-modal="'+attr+'"]').addClass(modalOpen);
+}
 
 $(document).ready(function () {
     $($modalButton).click(function (e) {
@@ -24,14 +34,4 @@ $(document).ready(function () {
     $($closeButton).click(function (e) {
         closeModal ();
     });
-
-    function closeModal () {
-        $($modal).removeClass(modalOpen);
-        $('body').removeClass(bodyModalOpen);
-    }
-
-    function openModal (attr) {
-        $('body').addClass(bodyModalOpen);
-        $('.modal[data-modal="'+attr+'"]').addClass(modalOpen);
-    }
 });

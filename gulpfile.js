@@ -17,6 +17,16 @@ var path = {
             pagination: 'bitrix/system.pagenavigation/.default',
             loyaltyCategoriesList: 'bitrix/catalog/loyalty/bitrix/catalog.section.list/.default',
             loyaltyCompaniesList: 'bitrix/catalog/loyalty/bitrix/catalog.section/.default',
+            loyaltyCompanyDetail: 'bitrix/catalog/loyalty/bitrix/catalog.element/.default',
+            priceList: 'bitrix/catalog.section.list/price-list',
+            contacts: 'ml/contacts-map/.default',
+            formatsList: 'bitrix/news/formats/bitrix/news.list/.default',
+            formatDetail: 'bitrix/news/formats/bitrix/news.detail/.default',
+            sliderLayout: 'bitrix/news.list/slider-layout',
+            map: 'bitrix/news.list/infrastructure-map',
+            conditionsList: 'bitrix/news/conditions/bitrix/news.list/.default',
+            slideMenu: 'bitrix/menu/slide-menu',
+            orderForm: 'bitrix/form.result.new/send-application',
             }
             
 var pathExcludeJS = [];
@@ -64,13 +74,22 @@ gulp.task('compile', function() {
         .pipe(gulp.dest('public/html_dev/js/'));          
         
         
-    gulp.src('public/css/slideMenu.css')
-        .pipe(rename('slideMenu.css'))
+    gulp.src('public/css/commonWebpack.css')
+        .pipe(rename('commonWebpack.css'))
         .pipe(gulp.dest('public/html_dev/'));
         
-    gulp.src('public/js/slideMenu.js')
-        .pipe(rename('slideMenu.js'))
+    gulp.src('public/js/commonWebpack.js')
+        .pipe(rename('commonWebpack.js'))
         .pipe(gulp.dest('public/html_dev/js/'));
+     
+     
+    gulp.src('public/css/gallery.css')
+        .pipe(rename('style.css'))
+        .pipe(gulp.dest('public/html_dev/components/bitrix/news.list/gallery')); 
+        
+    gulp.src('public/css/gallery.css')
+        .pipe(rename('style.css'))
+        .pipe(gulp.dest('public/html_dev/components/bitrix/news.list/video')); 
     return true;
 });
 

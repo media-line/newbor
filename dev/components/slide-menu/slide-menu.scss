@@ -11,6 +11,7 @@
         font-family: 'Roboto', sans-serif;
         padding: 0;
         margin-right: 12px;
+        overflow: visible;
 
         &:hover {
             .slide-menu__menu-button {
@@ -103,7 +104,7 @@
 
     &__left {
         display: flex;
-        max-height: 300px;
+        max-height: 290px;
         flex-wrap: wrap;
         flex-direction: column;
         min-width: 800px;
@@ -130,6 +131,10 @@
         text-decoration: none;
         color: $white;
 
+        &:hover {
+            color: $white;
+        }
+
         @include link-decoration ($white, 2px, 0.5s);
     }
 
@@ -144,6 +149,10 @@
         color: $gray;
         text-decoration: none;
         padding-bottom: 1px;
+
+        &:hover {
+            color: $gray;
+        }
 
         @include link-decoration ($gray, 1px, 0.5s);
     }
